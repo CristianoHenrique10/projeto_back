@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulário HTML5</h1>
+    <form method="POST" action="formulario.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="escolha">Sexo:</label>
+        <select id="escolha" name="escolha">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outros</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>O que você achou desse formulário ?</legend>
+            <input type="radio" id="opcao1" name="grupo_opcoes" value="bom">
+            <label for="opcao1">Bom</label><br>
+            <input type="radio" id="opcao2" name="grupo_opcoes" value="excelente">
+            <label for="opcao2">Excelente</label><br>
+            <input type="radio" id="opcao3" name="grupo_opcoes" value="perfeito">
+            <label for="opcao3">Perfeito</label><br>
+        </fieldset><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <footer>
+        <h3>Desenvolvido por Cristiano Henrique Santana de Souza - Matricula (24009557) </h3>
+    </footer>
+</body>
+
+</html>
